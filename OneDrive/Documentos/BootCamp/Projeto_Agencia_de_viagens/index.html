@@ -5,20 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Agency</title>
+
     <!--css only-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="/css/scrollspy-roteiro.css">
 
+    <!--JavaScript Bundle with Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <!--JavaScript Bundçe with Popper-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
+    <!-- NavBar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-            <img src="logo.png" width="60" alt="logo" class="me-2">
+            <img src="images/logo.png" width="60" alt="logo" class="me-2">
 
             <a class="navbar-brand me-5" href="#">Agência de viagens</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -49,7 +51,7 @@
         </div>
     </nav>
 
-
+    <!-- Carousel -->
     <div class="container mt-1 d-none d-lg-block">
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
@@ -62,21 +64,21 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img1.jpg" class="d-block w-100" alt="...">
+                    <img src="/images/img1.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h1>Destinos Únicos</h1>
                         <h5>Temos destinos exclusivos para lugares paradísicos no mundo todo!</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img2.jpg" class="d-block w-100" alt="...">
+                    <img src="/images/img2.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h1>Contato com a natureza</h1>
                         <h5>Desconecte do mundo e se conecte com a natureza</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img3.jpg" class="d-block w-100" alt="...">
+                    <img src="/images/img3.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h1>Que tal um mergulho na natureza?</h1>
                         <h5>Aproveite nossos pacotes ecológicos exclusivos!</h5>
@@ -97,6 +99,52 @@
 
 
     </div>
+
+    <div class="container text-center mt-5">
+        <!-- Title and SubTitle -->
+        <div class="display-5">
+            Aqui começa a sua aventura!
+        </div>
+        Reserve agora a sua experiência!
+        <!-- ScrollSky Roteiros -->
+        <div class="row mt-4">
+            <div class="col-lg-3">
+                <div id="list-roteiro" class="list-group">
+                    <a class="list-group-item list-group-item-action" href="#list-roteiro-2">Roteiro Tranquilidade</a>
+                    <a class="list-group-item list-group-item-action" href="#list-roteiro-1">Roteiro Aventura</a>
+                    <a class="list-group-item list-group-item-action" href="#list-roteiro-3">Roteiro Romântico</a>
+                    <a class="list-group-item list-group-item-action" href="#list-roteiro-4">Roteiro Família</a>
+                    <a class="list-group-item list-group-item-action" href="#list-roteiro-4">Roteiro Praia</a>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div data-bs-spy="scroll" data-bs-target="#list-roteiro" data-bs-smooth-scroll="true"
+                    class="scrollspy-roteiro" tabindex="0">
+                    <h4 id="list-roteiro-1">Roteiro Aventura</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti molestias doloribus sapiente
+                        autem dicta possimus, consequatur id enim voluptatibus ducimus deleniti labore nobis obcaecati,
+                        consectetur molestiae provident nostrum modi illo?</p>
+                    <h4 id="list-roteiro-2">Roteiro Tranquilidade</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias excepturi laudantium aperiam
+                        numquam, animi deleniti sit error sequi corrupti labore perferendis iste soluta saepe modi minus
+                        corporis vel tenetur at.</p>
+                    <h4 id="list-roteiro-3">Roteiro Romântico</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt deserunt esse eaque eligendi
+                        soluta quaerat earum, asperiores eum omnis, odio sit nihil accusamus debitis aliquid alias qui
+                        porro, temporibus rem!</p>
+                    <h4 id="list-roteiro-4">Roteiro Família</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore reprehenderit maiores
+                        expedita sit laudantium consectetur eaque enim, minus impedit suscipit ab voluptatibus fugit,
+                        sed doloribus soluta nobis dignissimos mollitia voluptatem.</p>
+                    <h4 id="list-roteiro-5">Roteiro Praia</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus non quae autem commodi iure
+                        sint! Quod eos ab reiciendis aut omnis voluptas voluptatibus est laudantium non nihil, quae
+                        provident consectetur?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 
